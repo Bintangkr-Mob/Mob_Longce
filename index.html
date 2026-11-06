@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#030817">
+    <meta name="description" content="VoltGo — konsep landing page mobil listrik tiga kursi untuk mobilitas urban.">
+    <title>VoltGo — Jalan Keluar yang Lebih Hemat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="demo-notice"><span class="notice-light"></span> Pratinjau konten promosi — seluruh angka dan ketentuan wajib diganti dengan penawaran resmi sebelum digunakan.</div>
+
+    <div class="promo-bar" aria-label="Pratinjau promo VoltGo">
+      <div class="promo-content"><span class="flash-pill"><span>ϟ</span> PRATINJAU FLASH SALE · BATCH 1</span><strong>Diskon Rp15 juta <span class="promo-separator">|</span> Kuota promo: <u>9 unit</u></strong></div>
+      <div class="promo-timer"><span>Berakhir dalam</span><time id="countdown">05:30:42</time><span class="timer-caption">pratinjau</span></div>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="VoltGo, ke beranda">
+        <span class="brand-icon" aria-hidden="true">ϟ</span>
+        <span class="brand-copy"><strong>Volt<span>Go</span></strong><small>3-SEATER URBAN EV</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="#cerita">Cerita VoltGo</a>
+        <a href="#fitur">Kenapa VoltGo?</a>
+        <a href="#penawaran">Harga & promo</a>
+      </nav>
+      <a class="button button-primary nav-cta" href="#form">Tanya Informasi <span aria-hidden="true">→</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-glow"></div>
+        <div class="hero-copy">
+          <div class="hero-tag"><span>♥</span> UNTUK KELUARGA MUDA & MOBILITAS HARIAN</div>
+          <h1>Lelah Terjebak Macet &amp;<br class="desktop-break"> Pusing Biaya Bensin?<br><span>Kini Ada Jalan Keluar<br class="desktop-break"> yang Lebih Hemat.</span></h1>
+          <p class="hero-description">Kenalkan VoltGo, konsep mobil listrik tiga kursi untuk perjalanan harian di kota. Lebih ringkas untuk keseharian. Lebih banyak ruang untuk cerita bersama.</p>
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#form">Tanya Informasi <span aria-hidden="true">→</span></a>
+            <a class="button button-quiet" href="#fitur"><span class="play-icon" aria-hidden="true">▶</span> Kenali VoltGo</a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-avatars" aria-hidden="true"><span>V</span><span>3</span><span>♡</span></div>
+            <p><strong>Satu ide. Banyak cerita baru.</strong><span>Dirancang ulang untuk cara kita bergerak.</span></p>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-grid"></div>
+          <div class="visual-glow"></div>
+          <div class="visual-kicker"><span class="pulse-dot"></span> MOBILITAS KOTA, DENGAN CARA BARU</div>
+          <div class="visual-badge"><span>100%</span><small>LISTRIK</small></div>
+          <svg class="hero-car" viewBox="0 0 820 470" role="img" aria-labelledby="car-title car-desc">
+            <title id="car-title">Ilustrasi konsep mobil listrik tiga kursi VoltGo</title>
+            <desc id="car-desc">Mobil listrik mungil berwarna turquoise dan hitam, ditampilkan di jalan kota pada malam hari.</desc>
+            <defs>
+              <linearGradient id="carPaint" x1="185" y1="168" x2="619" y2="363" gradientUnits="userSpaceOnUse"><stop stop-color="#57F2D1"/><stop offset=".45" stop-color="#19C8B3"/><stop offset="1" stop-color="#078B8D"/></linearGradient>
+              <linearGradient id="carGlass" x1="310" y1="135" x2="523" y2="267" gradientUnits="userSpaceOnUse"><stop stop-color="#B0FFF0"/><stop offset=".35" stop-color="#286B76"/><stop offset="1" stop-color="#101D39"/></linearGradient>
+              <linearGradient id="carRoof" x1="332" y1="121" x2="539" y2="202" gradientUnits="userSpaceOnUse"><stop stop-color="#253B56"/><stop offset="1" stop-color="#0C152B"/></linearGradient>
+              <filter id="carShadow" x="85" y="338" width="660" height="100" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="17"/></filter>
+              <filter id="lightGlow" x="91" y="257" width="657" height="166" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="10"/></filter>
+            </defs>
+            <ellipse cx="425" cy="391" rx="300" ry="28" fill="#24DCC2" opacity=".25" filter="url(#carShadow)"/>
+            <path d="M173 298c17-17 44-27 79-35l64-93c16-23 42-36 70-36h132c34 0 61 15 81 45l47 72c34 6 59 19 76 41 10 14 15 31 15 51v17c0 16-13 29-29 29h-46c-7-46-40-75-84-75s-77 29-84 75H321c-7-46-40-75-84-75s-77 29-84 75h-34c-19 0-34-15-34-34v-34c0-14 6-26 17-36l71-47Z" fill="url(#carPaint)" stroke="#77FFE3" stroke-width="4" stroke-linejoin="round"/>
+            <path d="m329 181-63 85h151V143h-30c-24 0-42 12-58 38Z" fill="url(#carGlass)" stroke="#69EBD4" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M417 143v123h180l-44-66c-15-22-35-44-65-44h-71Z" fill="url(#carGlass)" stroke="#69EBD4" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M417 147v119m-151 0 63-85m88 85V143" stroke="#69EBD4" stroke-width="4"/>
+            <path d="M329 181c16-26 34-38 58-38h30v123H266l63-85Z" fill="url(#carRoof)" opacity=".34"/>
+            <path d="M177 300c33-15 60-20 99-20h315c47 0 81 10 112 31" fill="none" stroke="#B8FFF3" stroke-width="4" opacity=".7"/>
+            <path d="M691 285h35c13 0 24 6 30 17l5 11h-59l-11-28Z" fill="#E4FFFA"/>
+            <path d="M97 326h54l-3 27h-39c-9 0-16-7-16-16v-5c0-3 1-5 4-6Z" fill="#C5FFF5"/>
+            <path d="M403 293h47m56 0h46" stroke="#B3FFF1" stroke-width="4" stroke-linecap="round"/>
+            <path d="M407 315h42" stroke="#0A7776" stroke-width="4" stroke-linecap="round"/>
+            <path d="m518 289-13 20h15l-9 17 26-26h-17l12-11h-14Z" fill="#D1FFF3"/>
+            <ellipse cx="726" cy="317" rx="29" ry="21" fill="#30E9CE" opacity=".38" filter="url(#lightGlow)"/>
+            <circle cx="238" cy="382" r="52" fill="#050B1C" stroke="#1B2A40" stroke-width="8"/><circle cx="238" cy="382" r="29" fill="#8EA9B1"/><circle cx="238" cy="382" r="15" fill="#13243A"/><circle cx="238" cy="382" r="5" fill="#31E4CB"/>
+            <circle cx="628" cy="382" r="52" fill="#050B1C" stroke="#1B2A40" stroke-width="8"/><circle cx="628" cy="382" r="29" fill="#8EA9B1"/><circle cx="628" cy="382" r="15" fill="#13243A"/><circle cx="628" cy="382" r="5" fill="#31E4CB"/>
+            <path d="M359 193h44m42-32h52" stroke="#D8FFF8" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+          </svg>
+          <div class="visual-feature feature-range"><span class="feature-symbol">ϟ</span><span><strong>100% Elektrik</strong><small>Visual konsep kendaraan</small></span></div>
+          <div class="visual-feature feature-seats"><span class="seat-symbol">3</span><span><strong>3 tempat duduk</strong><small>Konsep untuk perjalanan bertiga</small></span></div>
+          <div class="visual-floor"></div>
+          <span class="visual-disclaimer">ILUSTRASI DIGITAL · PRODUK AKTUAL DAPAT BERBEDA</span>
+        </div>
+        <div class="hero-stats">
+          <div><span class="stat-icon">ϟ</span><p><strong>Mobilitas listrik</strong><small>Konsep kendaraan elektrik</small></p></div>
+          <div><span class="stat-icon">⌂</span><p><strong>Isi daya di rumah*</strong><small>*Menunggu konfirmasi spesifikasi</small></p></div>
+          <div><span class="stat-icon">♡</span><p><strong>Pas untuk bertiga</strong><small>Konfigurasi konsep 3 kursi</small></p></div>
+        </div>
+      </section>
+
+      <section class="story-section section-pad" id="cerita">
+        <div class="section-shell story-layout">
+          <div class="story-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> BUKAN SEKADAR PERJALANAN</p>
+            <h2>Pagi yang sama.<br><span>Rasa yang berbeda.</span></h2>
+            <div class="story-quote"><span class="quote-mark">“</span><p>Kita cuma ingin sampai tepat waktu. Mengantar orang tersayang. Pulang tanpa terus menghitung biaya perjalanan.</p></div>
+            <p class="story-body">Di tengah macet yang tak menunggu dan harga energi yang berubah-ubah, kami membayangkan cara bergerak yang terasa lebih sederhana. Bukan mobil besar untuk semua orang—melainkan konsep mobil listrik ringkas dengan tiga tempat duduk, untuk cerita yang dijalani bertiga.</p>
+            <p class="micro-disclaimer">Cerita ini menggambarkan visi konsep, bukan klaim performa kendaraan.</p>
+          </div>
+          <div class="story-scene">
+            <div class="scene-sun"></div><div class="scene-road"></div>
+            <div class="scene-buildings"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="scene-window window-a"></div><div class="scene-window window-b"></div><div class="scene-window window-c"></div>
+            <svg class="scene-car" viewBox="0 0 450 250" aria-hidden="true">
+              <path d="M45 145c9-11 24-17 45-22l36-51c10-14 23-20 40-20h73c20 0 34 8 45 24l27 38c18 4 31 10 39 21l8 17v15c0 8-6 14-14 14h-24c-3-22-18-35-38-35s-35 13-38 35h-87c-3-22-18-35-38-35s-35 13-38 35H58c-10 0-18-8-18-18v-12c0-5 2-9 6-12Z" fill="#25D6C1" stroke="#A8FFF3" stroke-width="3" stroke-linejoin="round"/>
+              <path d="m129 77-31 45h75V55h-8c-15 0-25 7-36 22Zm53-22v67h103l-23-33c-9-13-19-34-43-34h-37Z" fill="#28445E" stroke="#A8FFF3" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M182 57v65m-84 0 31-45m53 45V55" stroke="#A8FFF3" stroke-width="3"/>
+              <circle cx="98" cy="184" r="25" fill="#050B1C" stroke="#829AA4" stroke-width="4"/><circle cx="98" cy="184" r="10" fill="#14283C"/>
+              <circle cx="310" cy="184" r="25" fill="#050B1C" stroke="#829AA4" stroke-width="4"/><circle cx="310" cy="184" r="10" fill="#14283C"/>
+            </svg>
+            <span class="scene-caption">SATU IDE UNTUK CERITA SEHARI-HARI</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-section section-pad" id="fitur">
+        <div class="section-shell">
+          <div class="section-title">
+            <div><p class="eyebrow"><span class="eyebrow-line"></span> KENAPA KONSEP INI MENARIK?</p><h2>Hal kecil yang bisa<br><span>membuat beda.</span></h2></div>
+            <p>Inilah ide di balik VoltGo. Spesifikasi dan klaim manfaat aktual harus dikonfirmasi sebelum dipublikasikan.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card"><span class="feature-number">01</span><span class="feature-icon">ϟ</span><h3>Bergerak dengan listrik</h3><p>Bayangkan rutinitas harian tanpa mampir ke pom bensin. Kapasitas baterai, jarak tempuh, dan biaya pengisian belum tersedia.</p><span class="card-foot">DETAIL MENUNGGU SPESIFIKASI RESMI</span></article>
+            <article class="feature-card"><span class="feature-number">02</span><span class="feature-icon">♧</span><h3>Pas untuk cerita bertiga</h3><p>Tiga kursi untuk ide perjalanan kompak: keluarga kecil, antar jemput, atau sekadar pergi bersama.</p><span class="card-foot">KONFIGURASI KONSEP</span></article>
+            <article class="feature-card"><span class="feature-number">03</span><span class="feature-icon">⌖</span><h3>Dirancang untuk kota</h3><p>Bentuk ringkas menjadi bagian dari konsep. Dimensi, radius putar, dan kemudahan parkir perlu verifikasi resmi.</p><span class="card-foot">UKURAN AKTUAL BELUM DIKONFIRMASI</span></article>
+            <article class="feature-card"><span class="feature-number">04</span><span class="feature-icon">⌂</span><h3>Isi daya lebih dekat</h3><p>Kenyamanan pengisian di rumah bergantung pada fitur, charger, instalasi, dan kondisi hunian yang tersedia.</p><span class="card-foot">KECOCOKAN PENGISIAN PERLU DICEK</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="guarantee-section section-pad">
+        <div class="section-shell guarantee-layout">
+          <div class="guarantee-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> BELI DENGAN LEBIH TENANG</p>
+            <h2>Rasa percaya<br>berawal dari <span>kejelasan.</span></h2>
+            <p>Sebelum memilih kendaraan listrik, wajar kalau kamu ingin tahu perlindungan baterai, layanan servis, dan siapa yang bertanggung jawab. Informasi resmi perlu tersedia sebelum keputusan pembelian.</p>
+            <a class="button button-outline" href="#form">Tanyakan detail garansi <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="warranty-card">
+            <span class="warranty-symbol">◇</span>                                    <span class="sample-label">PRATINJAU GARANSI</span>
+            <h3>Baterai terlindungi<br><span>hingga 5 tahun*</span></h3>
+            <p>Pratinjau benefit: garansi baterai hingga 5 tahun. Durasi, cakupan, batas pemakaian, dan syarat klaim perlu dikonfirmasi penjual.</p>
+            <div class="warranty-divider"></div>
+            <div class="warranty-mini"><span>✓</span> Cek dokumen garansi sebelum pemesanan</div>
+            <div class="warranty-mini"><span>✓</span> Pastikan identitas dan layanan purna jual penjual</div>
+            <small>Pastikan durasi dan cakupan garansi sesuai dokumen resmi sebelum pemesanan.</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section section-pad">
+        <div class="section-shell">
+          <div class="section-title testimonial-heading">
+            <div><p class="eyebrow"><span class="eyebrow-line"></span> ULASAN · CONTOH REDAKSI</p><h2>Kesan pertama<br><span>tentang VoltGo.</span></h2></div>
+            <p>Contoh tampilan ulasan untuk rancangan halaman. Teks dan nama berikut bukan testimoni pembeli terverifikasi.</p>
+          </div>
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <div class="review-card-top"><span class="review-rating" aria-label="5 dari 5 bintang">★★★★★</span><span class="review-icon">♡</span></div>
+              <span class="review-sample-label">CONTOH ULASAN</span>
+              <blockquote>“Mobil listrik 3 kursi ini pas banget buat kami bertiga! Desain kabinnya unik, posisi duduk terasa lega, dan akselerasinya halus banget. Sangat efisien untuk mobilitas harian di perkotaan.”</blockquote>
+              <div class="review-person"><span class="review-avatar">S</span><span><strong>Stephen</strong><small>Nama contoh · ulasan belum terverifikasi</small></span></div>
+            </article>
+            <article class="testimonial-card">
+              <div class="review-card-top"><span class="review-rating" aria-label="5 dari 5 bintang">★★★★★</span><span class="review-icon">ϟ</span></div>
+              <span class="review-sample-label">CONTOH ULASAN</span>
+              <blockquote>“Baterainya tergolong awet dan pengisian dayanya cepat. Fitur teknologinya modern tanpa ribet, bikin berkendara makin praktis dan ramah lingkungan.”</blockquote>
+              <div class="review-person"><span class="review-avatar">L</span><span><strong>Leditron</strong><small>Nama contoh · ulasan belum terverifikasi</small></span></div>
+            </article>
+            <article class="testimonial-card">
+              <div class="review-card-top"><span class="review-rating" aria-label="5 dari 5 bintang">★★★★★</span><span class="review-icon">⌖</span></div>
+              <span class="review-sample-label">CONTOH ULASAN</span>
+              <blockquote>“Ukurannya compact jadi gampang selap-selip dan parkir, tapi bagian dalam tetap nyaman buat nongkrong bertiga. Mantap dan worth it banget!”</blockquote>
+              <div class="review-person"><span class="review-avatar">P</span><span><strong>Pentol</strong><small>Nama contoh · ulasan belum terverifikasi</small></span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="offer-section section-pad" id="penawaran">
+        <div class="section-shell offer-layout">
+          <div class="offer-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> INFORMASI PEMESANAN</p>
+            <h2>Langkah kecil menuju<br><span>perjalanan baru.</span></h2>
+            <p>Harga perkenalan dan promo berikut adalah materi pratinjau. Konfirmasi harga, tanggal promo, kuota, serta syarat pre-order kepada penjual sebelum bertransaksi.</p>
+            <div class="offer-alert"><span>◷</span><p><strong>Promo terbatas · pratinjau</strong><small>Periode dan ketersediaan promo aktual harus dikonfirmasi penjual.</small></p></div>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-heading"><span>HARGA PRE-ORDER · PRATINJAU</span><span class="demo-chip">KONTEN CONTOH</span></div>
+            <p class="old-price">Harga normal <s>Rp169.000.000</s></p>
+            <p class="main-price">Rp154.000.000<span>*</span></p>
+            <p class="save-price">Hemat Rp15.000.000 · harga dan diskon perlu konfirmasi</p>
+            <div class="pricing-rule"></div>
+            <div class="payment-title"><strong>PILIH METODE PEMBAYARAN</strong><span>pilih untuk melihat detail</span></div>
+            <div class="payment-options" role="group" aria-label="Pilih metode pembayaran">
+              <button class="payment-option payment-choice" type="button" data-payment="bri" aria-controls="payment-bri" aria-pressed="false"><span class="payment-logo bank-logo">BRI</span><span><strong>Bank BRI</strong><small>Lihat rekening</small></span></button>
+              <button class="payment-option payment-choice" type="button" data-payment="bca" aria-controls="payment-bca" aria-pressed="false"><span class="payment-logo bank-logo">BCA</span><span><strong>Bank BCA</strong><small>Lihat rekening</small></span></button>
+            </div>
+            <div class="payment-detail bank-details" id="payment-bri" hidden>
+              <strong>Transfer melalui Bank BRI</strong>
+              <p>Hubungi penjual untuk memperoleh nomor rekening dan konfirmasi nama penerima sebelum melakukan transfer.</p>
+            </div>
+            <div class="payment-detail bank-details" id="payment-bca" hidden>
+              <strong>Transfer melalui Bank BCA</strong>
+              <p>Hubungi penjual untuk memperoleh nomor rekening dan konfirmasi nama penerima sebelum melakukan transfer.</p>
+            </div>
+            <div class="account-note"><span>ⓘ</span> Nomor rekening diberikan melalui kanal penjual. Periksa nama penerima sebelum membayar.</div>
+            <a class="button button-primary pricing-cta" href="#form">Isi Form Pre-Order <span aria-hidden="true">→</span></a>
+            <p class="pricing-footnote">*Angka harga, diskon, kuota, garansi, dan periode promo ini materi pratinjau, bukan penawaran resmi.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section section-pad" id="form">
+        <div class="section-shell form-layout">
+          <div class="form-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> LANGKAH BERIKUTNYA</p>
+            <h2>Penasaran? Yuk,<br><span>mulai ngobrol.</span></h2>
+            <p>Tinggalkan kontakmu untuk meminta informasi produk, harga resmi, garansi, atau jadwal test drive. Formulir ini belum tersambung ke kanal kontak.</p>
+            <div class="contact-promise"><span>✓</span><span><strong>Tanpa pembayaran di halaman ini</strong><small>Pastikan detail produk dan penjual terverifikasi.</small></span></div>
+          </div>
+          <form class="lead-form" id="lead-form">
+            <div class="form-topline"><span>FORM MINAT VOLTGO</span><span><i></i> KONTAK BELUM AKTIF</span></div>
+            <label for="name">Nama lengkap</label>
+            <input id="name" name="name" type="text" autocomplete="name" placeholder="Tulis nama kamu" required>
+            <div class="form-row">
+              <div><label for="phone">Nomor WhatsApp</label><input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="08xxxxxxxxxx" pattern="[0-9]{8,15}" required></div>
+              <div><label for="city">Kota domisili</label><input id="city" name="city" type="text" autocomplete="address-level2" placeholder="Kota kamu" required></div>
+            </div>
+            <label for="interest">Saya ingin mengetahui</label>
+            <select id="interest" name="interest">
+              <option>Harga dan promo resmi</option>
+              <option>Spesifikasi kendaraan</option>
+              <option>Garansi dan layanan servis</option>
+              <option>Jadwal test drive</option>
+            </select>
+            <label class="consent"><input type="checkbox" required><span>Saya setuju dihubungi tentang permintaan informasi ini.</span></label>
+            <button type="submit" class="button button-primary form-submit">Klaim Pre-Order Sekarang <span aria-hidden="true">→</span></button>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell footer-top">
+        <a class="brand" href="#home"><span class="brand-icon" aria-hidden="true">ϟ</span><span class="brand-copy"><strong>Volt<span>Go</span></strong><small>3-SEATER URBAN EV</small></span></a>
+        <p>Perjalanan harian, dengan lebih banyak kemungkinan.<br><span>VoltGo adalah nama konsep. Bukan merek atau penawaran resmi.</span></p>
+        <a class="back-top" href="#home">Kembali ke atas ↑</a>
+      </div>
+      <div class="section-shell footer-bottom"><span>© <span id="year"></span> VoltGo · Konsep visual</span><span>Pastikan seluruh klaim, harga, legalitas, garansi & pembayaran telah diverifikasi.</span></div>
+    </footer>
+  </body>
+</html>
