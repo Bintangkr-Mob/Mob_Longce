@@ -277,8 +277,8 @@ button, input, select { font: inherit; }
   .button { min-height: 42px; gap: 7px; padding-inline: 12px; font-size: 9px; }
   .button-quiet { padding-inline: 10px; }
   .hero-proof { margin-top: 19px; }
-  .hero-visual { position: relative; top: auto; right: auto; width: calc(100% + 24px); height: 320px; margin: 13px -12px 0; }
-  .hero-photo { top: 36px; height: calc(100% - 74px); }
+  .hero-visual { position: relative; top: auto; right: auto; width: 100%; height: auto; aspect-ratio: 1; margin: 13px 0 0; }
+  .hero-photo { inset: 0; width: 100%; height: 100%; }
   .visual-kicker { top: 7px; padding: 6px 8px; font-size: 6px; }
   .visual-disclaimer { right: 5px; bottom: 7px; padding: 5px 6px; font-size: 5px; }
   .hero-stats { width: 100%; margin-top: 16px; padding-top: 12px; }
