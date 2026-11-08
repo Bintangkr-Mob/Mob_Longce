@@ -240,6 +240,7 @@ button, input, select { font: inherit; }
 @media (max-width: 650px) {
   html { scroll-padding-top: 68px; }
   .section-shell { width: calc(100% - 38px); }
+  .story-scene { aspect-ratio: 1; }
   .section-pad { padding-block: 68px; }
   .demo-notice { justify-content: flex-start; font-size: 7px; text-align: left; }
   .promo-bar { gap: 6px; padding: 8px 12px; }
