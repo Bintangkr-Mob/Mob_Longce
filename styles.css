@@ -72,24 +72,10 @@ button, input, select { font: inherit; }
 .hero-proof strong { color: #e5f5f4; font-size: 9px; }
 .hero-proof p span { margin-top: 3px; color: #8caaa9; font-size: 8px; }
 .hero-visual { position: absolute; width: 46%; height: 440px; top: 35px; right: 0; overflow: hidden; }
-.visual-grid { position: absolute; inset: 30px 0 37px; opacity: .33; background-image: linear-gradient(rgba(91, 220, 205, .14) 1px, transparent 1px), linear-gradient(90deg, rgba(91, 220, 205, .14) 1px, transparent 1px); background-size: 42px 42px; transform: perspective(350px) rotateX(56deg) scale(1.2); transform-origin: bottom; mask-image: linear-gradient(transparent, #000 52%, #000); }
-.visual-glow { position: absolute; width: 375px; height: 250px; top: 115px; left: 50%; transform: translateX(-50%); border-radius: 50%; background: rgba(23, 218, 190, .16); filter: blur(55px); }
-.visual-kicker { position: absolute; z-index: 2; top: 15px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 8px; white-space: nowrap; color: #8fbbb7; font-size: 8px; font-weight: 700; letter-spacing: .14em; }
+.hero-photo { position: absolute; z-index: 1; top: 44px; left: 0; width: 100%; height: calc(100% - 86px); border: 1px solid rgba(113, 237, 215, .22); border-radius: 14px; background: #091523; object-fit: contain; box-shadow: 0 22px 40px rgba(0, 0, 0, .28); }
+.visual-kicker { position: absolute; z-index: 2; top: 15px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 8px; padding: 8px 11px; border: 1px solid rgba(113, 237, 215, .22); border-radius: 9px; background: rgba(3, 16, 29, .82); color: #d7edeb; font-size: 8px; font-weight: 700; letter-spacing: .1em; white-space: nowrap; }
 .visual-kicker .pulse-dot { width: 6px; height: 6px; }
-.visual-badge { position: absolute; z-index: 4; top: 39px; right: 12%; width: 62px; height: 62px; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 1px solid rgba(99, 250, 218, .35); border-radius: 50%; background: rgba(5, 28, 38, .72); color: var(--teal-bright); box-shadow: 0 0 25px rgba(11, 209, 180, .1); transform: rotate(9deg); }
-.visual-badge span { font: 800 13px "Manrope", sans-serif; }
-.visual-badge small { margin-top: 2px; font-size: 6px; font-weight: 800; letter-spacing: .12em; }
-.hero-car { position: absolute; z-index: 3; width: 100%; max-width: none; left: 0; top: 60px; overflow: visible; filter: drop-shadow(0 26px 26px rgba(0,0,0,.4)); }
-.visual-feature { position: absolute; z-index: 5; display: flex; align-items: center; gap: 9px; padding: 8px 11px; border: 1px solid rgba(113, 237, 215, .22); border-radius: 11px; background: rgba(3, 16, 29, .78); box-shadow: 0 8px 25px rgba(0,0,0,.18); backdrop-filter: blur(8px); }
-.feature-range { top: 126px; left: 4%; }
-.feature-seats { right: 5%; bottom: 60px; }
-.feature-symbol { width: 26px; height: 26px; display: grid; place-items: center; border-radius: 8px; background: rgba(23, 215, 191, .15); color: var(--teal-bright); font-size: 16px; }
-.seat-symbol { width: 26px; height: 26px; display: grid; place-items: center; border-radius: 8px; background: rgba(23, 215, 191, .15); color: var(--teal-bright); font: 800 13px "Manrope", sans-serif; }
-.visual-feature strong, .visual-feature small { display: block; white-space: nowrap; }
-.visual-feature strong { color: #eaf8f5; font-size: 8px; }
-.visual-feature small { margin-top: 3px; color: #91aaa9; font-size: 7px; }
-.visual-floor { position: absolute; z-index: 1; bottom: 8px; left: 7%; right: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(65, 243, 212, .5), transparent); box-shadow: 0 0 14px rgba(23, 215, 191, .6); }
-.visual-disclaimer { position: absolute; z-index: 4; right: 10px; bottom: 14px; color: #8eadae; font-size: 6px; letter-spacing: .09em; }
+.visual-disclaimer { position: absolute; z-index: 2; right: 10px; bottom: 14px; padding: 6px 8px; border: 1px solid rgba(113, 237, 215, .2); border-radius: 7px; background: rgba(3, 16, 29, .86); color: #d7edeb; font-size: 6px; letter-spacing: .09em; }
 .hero-stats { position: relative; z-index: 4; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 56%; margin-top: 30px; padding-top: 17px; border-top: 1px solid rgba(194, 231, 224, .13); }
 .hero-stats > div { display: flex; align-items: center; gap: 9px; padding-right: 8px; }
 .hero-stats > div + div { padding-left: 14px; border-left: 1px solid rgba(194, 231, 224, .13); }
@@ -292,19 +278,9 @@ button, input, select { font: inherit; }
   .button-quiet { padding-inline: 10px; }
   .hero-proof { margin-top: 19px; }
   .hero-visual { position: relative; top: auto; right: auto; width: calc(100% + 24px); height: 320px; margin: 13px -12px 0; }
-  .hero-car { width: 120%; left: -10%; top: 43px; }
-  .visual-kicker { top: 7px; font-size: 6px; }
-  .visual-badge { top: 24px; right: 6%; width: 48px; height: 48px; }
-  .visual-badge span { font-size: 10px; }
-  .visual-badge small { font-size: 5px; }
-  .visual-feature { gap: 6px; padding: 6px 7px; }
-  .feature-range { top: 85px; left: 1%; }
-  .feature-seats { right: 1%; bottom: 33px; }
-  .feature-symbol, .seat-symbol { width: 21px; height: 21px; font-size: 11px; }
-  .visual-feature strong { font-size: 6px; }
-  .visual-feature small { font-size: 5px; }
-  .visual-disclaimer { right: 5px; bottom: 7px; font-size: 5px; }
-  .visual-floor { bottom: 0; }
+  .hero-photo { top: 36px; height: calc(100% - 74px); }
+  .visual-kicker { top: 7px; padding: 6px 8px; font-size: 6px; }
+  .visual-disclaimer { right: 5px; bottom: 7px; padding: 5px 6px; font-size: 5px; }
   .hero-stats { width: 100%; margin-top: 16px; padding-top: 12px; }
   .hero-stats > div { gap: 5px; }
   .hero-stats > div + div { padding-left: 7px; }
