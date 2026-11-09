@@ -101,6 +101,14 @@ button, input, select { font: inherit; }
 .scene-disclaimer { right: 10px; bottom: 10px; font-size: 6px; }
 
 .feature-section { background: linear-gradient(180deg, #030817, #050c1b); }
+.family-fit-section { padding-top: 40px; padding-bottom: 20px; background: #060d1d; }
+.family-fit-card { display: grid; grid-template-columns: 44px 1fr; gap: 18px; align-items: start; padding: 25px 28px; border: 1px solid rgba(230, 198, 111, .36); border-radius: 14px; background: linear-gradient(110deg, rgba(132, 92, 28, .16), rgba(11, 24, 39, .92)); }
+.family-fit-mark { width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid rgba(230, 198, 111, .48); border-radius: 12px; color: #f0d47f; font: 800 24px "Manrope", sans-serif; }
+.family-fit-card .eyebrow { margin-bottom: 10px; color: #edcc7d; }
+.family-fit-card .eyebrow-line { background: #edcc7d; }
+.family-fit-card h2 { margin: 0 0 9px; color: #f4f1e8; font: 800 clamp(23px, 2.8vw, 32px)/1.2 "Manrope", sans-serif; letter-spacing: -.04em; }
+.family-fit-card > div:last-child > p:last-child { max-width: 930px; margin: 0; color: #c4c6c1; font-size: 15px; line-height: 1.75; }
+.family-fit-card strong { color: #fff0bc; }
 .section-title { display: flex; align-items: end; justify-content: space-between; gap: 35px; margin-bottom: 36px; }
 .section-title h2, .guarantee-copy h2, .offer-copy h2, .form-copy h2 { font-size: clamp(37px, 4vw, 51px); }
 .section-title > p { max-width: 335px; margin: 0 0 4px; color: #93a2b1; font-size: 10px; line-height: 1.8; }
@@ -306,6 +314,99 @@ button, input, select { font: inherit; }
   .footer-top { align-items: flex-start; flex-wrap: wrap; }
   .footer-top > p { order: 3; width: 100%; }
   .footer-bottom { flex-direction: column; gap: 6px; line-height: 1.5; }
+}
+.demo-notice { min-height: 34px; font-size: 12px; }
+.brand-copy small { font-size: 9px; }
+.main-nav { font-size: 13px; }
+.button { font-size: 14px; }
+.hero-tag { font-size: 11px; }
+.hero-description { font-size: 16px; }
+.hero-proof strong { font-size: 13px; }
+.hero-proof p span { font-size: 11px; }
+.hero-stats strong { font-size: 12px; }
+.hero-stats small { font-size: 10px; }
+.eyebrow { font-size: 11px; }
+.story-body, .guarantee-copy > p:not(.eyebrow), .offer-copy > p:not(.eyebrow), .form-copy > p:not(.eyebrow), .section-title > p { font-size: 15px; }
+.micro-disclaimer { font-size: 12px; }
+.scene-caption, .scene-disclaimer, .visual-disclaimer { font-size: 10px; }
+.visual-kicker { font-size: 11px; }
+.feature-card h3 { font-size: 16px; }
+.feature-card p { font-size: 14px; }
+.card-foot { font-size: 10px; }
+.feature-number { font-size: 11px; }
+.warranty-card > p { font-size: 14px; }
+.warranty-mini { font-size: 13px; }
+.warranty-card > small { font-size: 12px; }
+.sample-label, .review-sample-label { font-size: 9px; }
+.testimonial-card blockquote { font-size: 14px; }
+.review-person strong { font-size: 12px; }
+.review-person small { font-size: 11px; }
+.offer-alert strong, .contact-promise strong { font-size: 13px; }
+.offer-alert small, .contact-promise small { font-size: 12px; }
+.pricing-heading { font-size: 10px; }
+.demo-chip { font-size: 9px; }
+.old-price, .price-prompt, .save-price { font-size: 13px; }
+.main-price { font-size: 32px; }
+.payment-title strong { font-size: 12px; }
+.payment-title span, .payment-option small, .form-status { font-size: 11px; }
+.payment-detail > strong { font-size: 13px; }
+.payment-detail > p, .account-note { font-size: 12px; }
+.payment-logo, .bank-logo { font-size: 11px; }
+.payment-option strong { font-size: 13px; }
+.pricing-footnote { font-size: 11px; }
+.form-topline { font-size: 11px; }
+.form-topline span:last-child { font-size: 10px; }
+.lead-form label { font-size: 13px; }
+.lead-form input:not([type="checkbox"]), .lead-form select { height: 46px; font-size: 14px; }
+.consent { font-size: 12px !important; }
+.footer-top > p { font-size: 12px; }
+.footer-top > p span { font-size: 10px; }
+.back-top, .footer-bottom { font-size: 11px; }
+@media (max-width: 650px) {
+  .demo-notice { justify-content: flex-start; font-size: 11px; text-align: left; }
+  .brand-copy small { font-size: 8px; }
+  .nav-cta { min-height: 40px; font-size: 12px; }
+  .hero-tag { width: fit-content; font-size: 10px; line-height: 1.4; }
+  .hero h1 { font-size: clamp(33px, 8.6vw, 43px); }
+  .hero-description { font-size: 15px; }
+  .button { min-height: 46px; font-size: 13px; }
+  .hero-proof strong { font-size: 12px; }
+  .hero-proof p span { font-size: 10px; }
+  .hero-stats strong { font-size: 10px; }
+  .hero-stats small { font-size: 9px; }
+  .family-fit-section { padding-top: 28px; padding-bottom: 12px; }
+  .family-fit-card { grid-template-columns: 32px 1fr; gap: 12px; padding: 19px 15px; }
+  .family-fit-mark { width: 30px; height: 30px; border-radius: 9px; font-size: 19px; }
+  .family-fit-card h2 { font-size: 23px; }
+  .family-fit-card > div:last-child > p:last-child { font-size: 14px; }
+  .story-copy h2, .section-title h2, .guarantee-copy h2, .offer-copy h2, .form-copy h2 { font-size: 35px; }
+  .story-quote p { font-size: 15px; }
+  .story-body, .guarantee-copy > p:not(.eyebrow), .offer-copy > p:not(.eyebrow), .form-copy > p:not(.eyebrow), .section-title > p { font-size: 14px; }
+  .micro-disclaimer { font-size: 11px; }
+  .scene-caption, .scene-disclaimer, .visual-disclaimer { font-size: 8px; }
+  .visual-kicker { font-size: 9px; }
+  .feature-grid { grid-template-columns: 1fr; gap: 12px; }
+  .feature-card { min-height: 0; padding: 19px 17px; }
+  .feature-card h3 { font-size: 16px; }
+  .feature-card p { font-size: 14px; }
+  .card-foot { font-size: 10px; }
+  .warranty-card > p { font-size: 14px; }
+  .warranty-mini { font-size: 13px; }
+  .warranty-card > small { font-size: 11px; }
+  .testimonial-card blockquote { font-size: 14px; }
+  .review-person strong { font-size: 13px; }
+  .review-person small { font-size: 11px; }
+  .pricing-heading { font-size: 9px; }
+  .payment-title strong { font-size: 11px; }
+  .payment-option strong { font-size: 12px; }
+  .payment-option small, .payment-title span { font-size: 10px; }
+  .payment-detail > strong { font-size: 12px; }
+  .payment-detail > p, .account-note, .pricing-footnote { font-size: 11px; }
+  .lead-form label { font-size: 12px; }
+  .lead-form input:not([type="checkbox"]), .lead-form select { font-size: 14px; }
+  .consent { align-items: flex-start; font-size: 11px !important; line-height: 1.5; }
+  .footer-top > p { font-size: 11px; }
+  .footer-bottom { font-size: 10px; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
