@@ -35,6 +35,16 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   if (!form.reportValidity()) return;
 
-  statusMessage.textContent =
-    "Formulir belum tersambung ke kontak resmi, jadi permintaanmu belum terkirim.";
+  const formData = new FormData(form);
+  const message = [
+    "Halo VoltGo, saya ingin klaim pre-order/informasi.",
+    `Nama: ${formData.get("name")}`,
+    `Nomor WhatsApp saya: ${formData.get("phone")}`,
+    `Kota: ${formData.get("city")}`,
+    `Informasi yang saya butuhkan: ${formData.get("interest")}`,
+  ].join("\n");
+  const whatsappUrl = new URL("https://wa.me/6289637760930");
+  whatsappUrl.searchParams.set("text", message);
+
+  window.location.assign(whatsappUrl);
 });
